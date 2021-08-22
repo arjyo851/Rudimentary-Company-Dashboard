@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar{
+    width: 310px;
+    background-color: #32CD32;
+    padding: 30px 0;
+}
+
+.wrapper .sidebar ul li{
+   padding:0px 15px;
+   margin-left: -50px;
+   width: 310px;
+}
+
+.wrapper .sidebar ul li a{
+    color:white;
+    display: block;
+    padding: 9px 9px;
+    text-decoration: none;
+    text-align: center;
+    width: 233px;
+}
+
+.wrapper .sidebar ul div button{
+    background-color: white;
+    color: #32CD32;
+}
+
+.wrapper .sidebar ul li a .mar{
+    width: 172px;
+    height: 72px;
+}
+
+.wrapper .sidebar ul div{
+    text-align: center;
+}
+
+.wrapper .sidebar ul li:hover{
+background-color: #4acf4a;
+border-right: 2px solid white;
+}
+
+.wrapper .main-content{
+    width: 100%;
+    background-color: #F4F6F4;
+}
+
+.wrapper .main-content .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    cursor: pointer;
+}
+
+
+
+.wrapper .main-content #nav-list{
+    width: 81%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav-link{
+    margin:auto 10px;
+    color: #0A0A0A;
+    opacity: 27%;
+}
+
+.nav-link:hover{
+    color:black;
+    opacity: 100%;
+}
+
+.topbar-divider{
+    width: 1px;
+  border-right: 1px solid #707070;
+  height: 29px;
+  margin: auto 1rem;
+}
+
+.d-sm-block{
+    display: block !important;
+}
+
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.mb-4{
+    margin-bottom: 1.5rem !important;
+}
+
+#add{
+    background-color:#32CD32;
+    position: absolute;
+    left: 320px;
+}
+
+
+
+.white{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.mar{
+    margin: 40px;
+}
+
+.wrapper .main-content #btn-search button{
+    border-radius: 7px;
+    color: white;
+    background-color: #32CD32;
+    width: 241px;
+    height: 55px;
+    position: relative;
+    right:157px;
+}
+
+.wrapper .main-content #btn-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+}
+
+.wrapper .main-content input{    
+    width: 358px;
+    height: 55px;
+    position: relative;
+    left: 165px;
+}
+
+.wrapper .main-content .accordion-item .accordion-header button{
+    
+    width: 945px;
+    height: 55px;
+    position: relative;
+    left: 15px;
+}
+
+.wrapper .main-content .accordion-item .accordion-header .accordion-button .icon #edit{
+    background: url("edit\ \(1\).png");
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+}
+
+.wrapper .main-content .accordion-item .accordion-header .accordion-button .icon #edit{
+    background: url("trash-can.png");
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+}
+
+/* w3schols */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    white-space: nowrap;
+    display: inline-block;
+    height: 90px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  #edit{
+    background: url("edit\ \(1\).png");
+    height: 15px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
+    position: relative;
+    left: 700px;
+    bottom: 80px;
+    padding: 16px;
+    background-repeat: no-repeat;
+}
+
+#trash{
+    background: url("trash-can.png");
+    height: 15px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
+    position: relative;
+    left: 810px;
+    bottom: 109px;
+    padding: 16px;
+    background-repeat: no-repeat;
+}
+
+#toggler{
+    background: url("Polygon\ 10.png");
+    height: 15px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
+    position: relative;
+    left: 890px;
+    bottom: 135px;
+    padding: 16px;
+    background-repeat: no-repeat;
+}
+
+#update{
+    border-radius: 7px;
+    color: white;
+    background-color: #32CD32;
+    width: 138px;
+    height: 55px;
+    position: relative;
+    right:157px;
+    left: 518px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color:rgb(255,145,0);
+    position: relative;
+    top: 4px;
+  }
+
+.check{
+    border: 2px solid orange;
+    width: 90px;
+}
+
+.modal-title{
+    position: relative;
+    left: 413px;
+}
+
+#dropdowns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalbutton{
+   background-color: grey;
+    width: 410px;
+    height: 55px;
+}
+
+.modalbutton:hover{
+    background-color: #32CD32;
+}
+
+#close{
+    position: relative;
+    right: 260px;
+}
+
+.modal-width{
+    width: 942px;
+    height: 453px;
+}
+
+#sometext{
+    width: 260px;
+    height: 60px;
+}
+
+.justi{
+    justify-content: space-evenly !important;
+}
+
+
+
+

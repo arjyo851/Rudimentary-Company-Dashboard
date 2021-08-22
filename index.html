@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tac-Tic-Tic</title>
+</head>
+
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a class="d-flex mar" href="index.html">
+                        <div id="logo">
+                            <img class="white" src="Group 14135.png" alt="brain">
+                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <div class="white">Tac-Tic-Tec</div>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="d-flex mar" href="index.html">
+                        <div class=" ">
+                            <img src="pie-chart (1).png" alt="Dashboard">
+                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <span class="white" id="dashb">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="d-flex mar" href="index.html">
+                        <div class=" ">
+                            <img src="tactic.png" alt="tactic">
+                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <span class="white" id="dashb">Tactics vault</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="d-flex mar" href="index.html">
+                        <div class=" ">
+                            <img src="group (2).png" alt="team">
+                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <span class="white" id="dashb">Teams</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="d-flex mar" href="index.html">
+                        <div class=" ">
+                            <img src="notebook.png" alt="Notebook">
+                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <span class="white" id="dashb">Schedule Generator</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="d-flex mar" href="index.html">
+                        <div class=" ">
+                            <img src="calendar (2).png" alt="calendar">
+                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <span class="white" id="dashb">Weekly Training Plans</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="d-flex mar" href="index.html">
+                        <div class=" ">
+                            <img src="bar-chart.png" alt="Metrics">
+                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <span class="white" id="dashb">Team Metrics</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="d-flex mar" href="index.html">
+                        <div class=" ">
+                            <img src="settings.png" alt="gear">
+                        </div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <span class="white" id="dashb">Customizations</span>
+                    </a>
+                </li>
+
+                <div id="teams2">
+                    <p style="margin: auto;">Select your Teams</p>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-secondary dropdown-toggle my-4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Team Name
+                    </button>
+                </div>
+
+            </ul>
+        </div>
+
+        <!-- main content starts here -->
+        <div class="main-content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light nav-size mb-4">
+
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="nav-list">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Teams</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">U23</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">U19</a>
+                            </li>
+
+                        </ul>
+                        <div class="topbar-divider  d-sm-block"></div>
+                        <img src="profile.png" alt="profile pic" class="rounded-circle">
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Marcus
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark"
+                                        aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="btn-search" class="mb-4">
+                <div>
+                    <button data-bs-target="#addModal" data-bs-toggle="modal">
+                        Add new Schedule
+                    </button>
+                </div>
+                <form>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+
+            <button class="accordion my-4 ">
+                <div>
+                    <p>Winter Training Schedule</p>
+                    <p>4 weeks | 12 sessions</p>
+                </div><span class='icon' id="edit"></span><span class='icon' id="trash"></span><span class='icon'
+                    id="toggler"></span>
+            </button>
+            <div class="panel ">
+                <div class="d-flex">
+                    <div>
+                        <p>Start Date</p>
+                        <p>25 January 2020</p>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
+                        <p id="left">End Date</p>
+                        <p>19 February 2020</p>
+                    </div>
+                    <div><button id="update">Update</button></div>
+                </div>
+                <div class="d-flex justi">
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Sunday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Monday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Tuesday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Wednesday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Thursday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Friday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Saturday</p>
+                        </button>
+                    </div>
+                    
+                    </div>
+    
+            </div>
+
+            <button class="accordion my-4 ">
+                <div>
+                    <p>Winter Training Schedule</p>
+                    <p>4 weeks | 12 sessions</p>
+                </div><span class='icon' id="edit"></span><span class='icon' id="trash"></span><span class='icon'
+                    id="toggler"></span>
+            </button>
+            <div class="panel ">
+                <div class="d-flex">
+                    <div>
+                        <p>Start Date</p>
+                        <p>25 January 2020</p>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
+                        <p id="left">End Date</p>
+                        <p>19 February 2020</p>
+                    </div>
+                    <div><button id="update">Update</button></div>
+                </div>
+
+                <div class="d-flex justi">
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Sunday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Monday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Tuesday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Wednesday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Thursday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Friday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Saturday</p>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <button class="accordion my-4 ">
+                <div>
+                    <p>Winter Training Schedule</p>
+                    <p>4 weeks | 12 sessions</p>
+                </div><span class='icon' id="edit"></span><span class='icon' id="trash"></span><span class='icon'
+                    id="toggler"></span>
+            </button>
+            <div class="panel ">
+                <div class="d-flex">
+                    <div>
+                        <p>Start Date</p>
+                        <p>25 January 2020</p>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
+                        <p id="left">End Date</p>
+                        <p>19 February 2020</p>
+                    </div>
+                    <div><button id="update">Update</button></div>
+                </div>
+                <div class="d-flex justi">
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Sunday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Monday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Tuesday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Wednesday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Thursday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Friday</p>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="d-flex check"  >    
+                            <span class="dot" id="monday" onclick="colorchange('monday');"></span>
+                            <p >Saturday</p>
+                        </button>
+                    </div>
+                    
+                    </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade " id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addModalLabel">Create New Schedule</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- mycontent -->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Schedule Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div id="dropdowns">
+                            <div>
+                                <label for="startDate">Start Date</label>
+                                <div class="dropdown" id="startDate">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="endDAte">End Date</label>
+                                <div class="dropdown" id="endDate">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="weeks">Enter number of weeks</label>
+                                <div class="" id="weeks">
+                                    <input type="text" id="sometext" placeholder="Enter no. of weeks">
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex">
+                    <button type="button" class="btn modalbutton" data-bs-dismiss="modal" id="close">Close</button>
+                    <button type="button" class="btn modalbutton">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        var eButton = document.querySelectorAll("button");
+        var isPink = false;//using white and pink in this example
+
+        eButton.addEventListener("click", function () {
+            if (isPink) {
+                document.body.style.background = "white";
+            }
+            else {
+                document.body.style.background = "pink";
+            }
+            isPink = !isPink; //switches between true and false
+        });
+    </script>
+</body>
+
+</html>
