@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html{
+    min-height:200vh ;
+    position:relative;
+}
+body{
+    height: 100%;
+}
+
+.acc-menu{
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    height: 100%;
+    width: 25%;
+    left: 0px;
+    top: 0px;
+}
+
+.navb{
+    position: absolute;
+
+    right: 0px;
+    top: 0px;
+    width: 75%;
+    background-color: pink;
+}
+
+.list{
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.list-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
